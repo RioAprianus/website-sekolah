@@ -1,0 +1,293 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center; /* Supaya sejajar vertikal */
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.school-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 15px;
+  white-space: nowrap;
+}
+
+#nav-menu {
+  margin-left: auto;
+}
+
+#nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+#nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold; /* Ini bikin huruf tebal */
+  font-size: 17px; /* Bisa kamu sesuaikan */
+  transition: color 0.3s;
+}
+
+#nav-menu ul li a:hover {
+  color: #007BFF;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Galeri */
+.galeri-kegiatan {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+
+.galeri-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content;
+}
+
+.galeri-wrapper {
+  overflow: hidden;
+  width: 100vw;
+  min-height: 100%;
+  position: relative;
+}
+
+.kegiatan-slide {
+  width: 100vw;
+  min-height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+
+.galeri-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.galeri-btn.left {
+  left: 10px;
+}
+
+.galeri-btn.right {
+  right: 10px;
+}
+
+.school-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 15px;
+  white-space: nowrap; /* desktop tidak boleh wrap */
+}
+
+/* sembunyikan br.mobile-break di desktop */
+.mobile-break {
+  display: none;
+}
+
+.announcement-wrapper {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.announcement-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.announcement-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.announcement-box {
+  width: 48%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.announcement-box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.announcement-content {
+  padding: 20px;
+}
+
+.announcement-content h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.announcement-content p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.announcement-meta {
+  font-size: 12px;
+  color: #999;
+}
+
+.announcement-btn-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.announcement-btn {
+  padding: 10px 20px;
+  background-color: #0a5c97;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.statistik-wrapper {
+  background: url('images/kegiatan2.jpg') no-repeat center center/cover;
+  padding: 0;
+  color: white;
+}
+
+.statistik-bg {
+  background-color: rgba(0, 51, 102, 0.95);
+  padding: 60px 0;
+  width: 100%;
+}
+
+.statistik-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+.stat-box {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+}
+.stat-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.stat-label {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.ppdb-banner {
+  background-color: #eaf4ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.ppdb-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ppdb-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.ppdb-info h2 {
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.ppdb-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.ppdb-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0a5c97;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.ppdb-btn:hover {
+  background-color: #004b7f;
+}
+

@@ -1,0 +1,222 @@
+/* ===== MOBILE STYLES ===== */
+@media only screen and (max-width: 768px) {
+
+  /* Tampilkan tombol toggle menu */
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  /* Header container mobile: wrap dan align center */
+  .header-container {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .school-name {
+    font-size: 18px;
+    margin-left: 0;
+    white-space: normal;
+    flex-grow: 1;
+  }
+
+  /* Nav sidebar mobile */
+  #nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    transition: left 0.3s ease;
+    z-index: 998;
+  }
+
+  #nav-menu.active {
+    left: 0;
+  }
+
+  /* Logo di atas navigasi khusus mobile */
+.nav-logo-mobile {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+  .nav-logo-mobile img {
+    width: 60px;
+    height: auto;
+  }
+
+  #nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* kita pakai border sebagai pemisah */
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  /* Link navigasi mobile dengan garis bawah sebagai pemisah */
+  #nav-menu ul li a {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 0;
+    display: block;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Hilangkan border bawah di item terakhir */
+  #nav-menu ul li:last-child a {
+    border-bottom: none;
+  }
+
+  /* Jika ingin, efek gelap saat menu aktif */
+  .galeri-kegiatan.nav-open {
+    filter: brightness(0.7);
+    pointer-events: none;
+  }
+}
+
+/* Sembunyikan logo tambahan di desktop */
+.nav-logo-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .school-name {
+  white-space: normal;
+  max-width: 70%; /* Supaya tidak terlalu lebar di HP */
+}
+
+
+  /* tampilkan br.mobile-break hanya di mobile */
+  .mobile-break {
+    display: inline;
+  }
+}
+
+/* Style dasar bar hamburger */
+#menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+  display: block;
+}
+
+/* Saat toggle aktif, transformasi menjadi X */
+#menu-toggle.active .bar1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle.active .bar2 {
+  opacity: 0;
+}
+
+#menu-toggle.active .bar3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+  .announcement-container {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .announcement-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .announcement-box img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistik-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    gap: 0;
+    box-sizing: border-box;
+  }
+
+  .stat-box {
+  min-height: 100px; /* atau 120px jika kamu mau lebih tinggi */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  /* Buat border kanan untuk kolom kiri (box 1 dan 3) */
+  .stat-box:nth-child(1),
+  .stat-box:nth-child(3) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Buat border bawah untuk baris atas (box 1 dan 2) */
+  .stat-box:nth-child(1),
+  .stat-box:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: #fff;
+    margin-top: 4px;
+  }
+
+.statistik-bg {
+  background-color: rgba(0, 51, 102, 0.95);
+  padding: 0;
+  width: 100%;
+}
+
+  .statistik-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+
+}
+
