@@ -1,10 +1,10 @@
 const guruData = [
-    { name: "Bu Siti Aminah", position: "Guru Matematika", img: "images/contoh1.png" },
-    { name: "Pak Hasan Basri", position: "Kepala Sekolah", img: "images/contoh2.png" },
-    { name: "Bu Indah Lestari", position: "Guru Bahasa", img: "images/contoh3.png" },
-    { name: "Pak Hadi Santoso", position: "Guru IPA", img: "images/contoh4.png" },
-    { name: "Bu Rina Marlina", position: "Guru IPS", img: "images/contoh5.png" },
-    { name: "Pak Joko Riyadi", position: "Guru PKN", img: "images/contoh6.png" }
+    { name: "Bu Siti Aminah", position: "Guru Matematika", img: "contoh1.png" },
+    { name: "Pak Hasan Basri", position: "Kepala Sekolah", img: "contoh2.png" },
+    { name: "Bu Indah Lestari", position: "Guru Bahasa", img: "contoh3.png" },
+    { name: "Pak Hadi Santoso", position: "Guru IPA", img: "contoh4.png" },
+    { name: "Bu Rina Marlina", position: "Guru IPS", img: "contoh5.png" },
+    { name: "Pak Joko Riyadi", position: "Guru PKN", img: "contoh6.png" }
 ];
 
 const guruContainer = document.querySelector('.guru-container');
