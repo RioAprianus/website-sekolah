@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMPN SATU ATAP 3 SAMPARA</title>
+  <link rel="stylesheet" href="css/style-index.css" />
+ <link rel="stylesheet" href="css/style-mobile.css" />
+ <link rel="stylesheet" href="css/style-guru.css" />
+
+ 
+
+
+</head>
+<body>
+
+<header>
+  
+  <div class="header-container">
+    <img src="images/logosekolah.png" alt="Logo Sekolah" class="logo" />
+    <h1 class="school-name">
+  SMPN SATU ATAP 3 <br class="mobile-break" /> SAMPARA
+</h1>
+
+    <button id="menu-toggle" aria-label="Toggle menu">
+      <span class="bar bar1"></span>
+      <span class="bar bar2"></span>
+      <span class="bar bar3"></span>
+    </button>
+
+   <nav id="nav-menu">
+  <div class="nav-logo-mobile">
+    <img src="images/logosekolah.png" alt="Logo Sekolah" />
+  </div>
+  <ul>
+    <li><a href="index.html">BERANDA</a></li>
+    <li><a href="pages/profilsekolah.html">PROFIL</a></li>
+    <li><a href="index.html#pengumuman">PENGUMUMAN</a>
+</li>
+    <li><a href="ppdb.html">PPDB 2024</a></li>
+    <li><a href="ekstrakurikuler.html">EKSTRAKURIKULER</a></li>
+    <li><a href="kontak.html">KONTAK</a></li>
+  </ul>
+</nav>
+  </div>
+</header>
+
+
+
+<div class="galeri-kegiatan">
+  <button class="galeri-btn left">&#9664;</button>
+  <div class="galeri-wrapper">
+    <div class="galeri-track">
+      <img src="images/kegiatan1.png" alt="Kegiatan 1" class="kegiatan-slide" />
+      <img src="images/kegiatan2.jpg" alt="Kegiatan 2" class="kegiatan-slide" />
+    </div>
+  </div>
+  <button class="galeri-btn right">&#9654;</button>
+</div>
+
+
+<section class="announcement-wrapper">
+  <h2 class="announcement-title">PENGUMUMAN SEKOLAH</h2>
+  <div class="announcement-container">
+    <div class="announcement-box">
+      <img src="images/pengumuman.jpg" alt="Pengumuman 1">
+      <div class="announcement-content">
+        <h3>Judul Pengumuman 1</h3>
+        <p>Deskripsi singkat pengumuman 1...</p>
+        <span class="announcement-meta">Diterbitkan: 5 Juni 2025 | Oleh: Admin</span>
+      </div>
+    </div>
+
+    <div class="announcement-box">
+      <img src="images/pengumuman.jpg" alt="Pengumuman 2">
+      <div class="announcement-content">
+        <h3>Judul Pengumuman 2</h3>
+        <p>Deskripsi singkat pengumuman 2...</p>
+        <span class="announcement-meta">Diterbitkan: 5 Juni 2025 | Oleh: Admin</span>
+      </div>
+    </div>
+
+    <div class="announcement-box hide-mobile">
+      <img src="images/pengumuman.jpg" alt="Pengumuman 3">
+      <div class="announcement-content">
+        <h3>Judul Pengumuman 3</h3>
+        <p>Deskripsi singkat pengumuman 3...</p>
+        <span class="announcement-meta">Diterbitkan: 4 Juni 2025 | Oleh: Admin</span>
+      </div>
+    </div>
+
+    <div class="announcement-box hide-mobile">
+      <img src="images/pengumuman.jpg" alt="Pengumuman 4">
+      <div class="announcement-content">
+        <h3>Judul Pengumuman 4</h3>
+        <p>Deskripsi singkat pengumuman 4...</p>
+        <span class="announcement-meta">Diterbitkan: 3 Juni 2025 | Oleh: Admin</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="announcement-btn-wrapper">
+    <a href="pengumuman.html" class="announcement-btn" target="_blank">Lihat Lebih Banyak</a>
+  </div>
+</section>
+
+<section class="statistik-wrapper">
+  <div class="statistik-bg">
+    <div class="statistik-container">
+      <div class="stat-box">
+        <div class="stat-number" data-target="313">0</div>
+        <div class="stat-label">Siswa</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" data-target="20">0</div>
+        <div class="stat-label">Tenaga Pendidik</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" data-target="60">0</div>
+        <div class="stat-label">Prestasi</div>
+      </div>
+      <div class="stat-box">
+       <div class="stat-number no-counter">C</div>
+
+        <div class="stat-label">Akreditasi</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ppdb-banner">
+  <div class="ppdb-container">
+    <img src="images/spnadukppdb.png" alt="PPDB 2025" class="ppdb-image">
+    <div class="ppdb-info">
+      <h2>PPDB 2025 Telah Dibuka!</h2>
+      <p>Daftarkan dirimu secara online melalui formulir resmi sekolah kami.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTLyWm6pcYh12rP9yDOMbI0m9NPJDsS63Xi-jbpuQRpv5lbA/viewform?usp=dialog" target="_blank" class="ppdb-btn">Daftar Sekarang</a>
+    </div>
+  </div>
+</section>
+
+<section id="guru-kami">
+  <h2>GURU DAN TENAGA PENDIDIK</h2>
+  <div class="guru-container"></div>
+  <button id="prev-btn">❮</button>
+  <button id="next-btn">❯</button>
+</section>
+
+
+
+
+
+
+
+
+
+<script src="js/menu-toggle.js"></script>
+<script src="js/galeri-slider.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/guru-slider.js"></script>
+
+</body>
+</html>
